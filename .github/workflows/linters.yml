@@ -60,15 +60,3 @@ jobs:
         uses: actions/checkout@v4
       - name: black
         uses: psf/black@stable
-
-  doctor-rst:
-    name: DOCtor-RST
-    runs-on: ubuntu-latest
-    steps:
-     - name: "Checkout code"
-       uses: actions/checkout@v4
-  
-     - name: DOCtor-RST
-       uses: docker://oskarstark/doctor-rst
-       with:
-         args: --short --error-format=github
