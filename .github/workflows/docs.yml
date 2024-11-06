@@ -59,3 +59,15 @@ jobs:
               echo "💥 📢 Code blocks in documentation must be reformatted with blacken-docs 📢 💥"
           fi;
           exit $RESULT
+
+  doctor-rst:
+    name: DOCtor-RST
+    runs-on: ubuntu-latest
+    steps:
+     - name: "Checkout code"
+       uses: actions/checkout@v4
+  
+     - name: DOCtor-RST
+       uses: docker://oskarstark/doctor-rst
+       with:
+         args: --short --error-format=github
