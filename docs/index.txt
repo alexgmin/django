@@ -9,7 +9,7 @@ Django documentation
 First steps
 ===========
 
-Are you new to Django or to programming? This is the place to start!
+Are you new to Django or to programming? This is the place to start! 1234567891234567891234567890
 
 * **From scratch:**
   :doc:`Overview <intro/overview>` |
